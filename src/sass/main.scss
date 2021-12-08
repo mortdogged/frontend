@@ -1,5 +1,5 @@
 $color-primary: #274690;
-$color-primary-light: #576ca8;
+$color-primary-light: #576da8;
 $color-primary-dark: #1b264f;
 
 $color-grey-dark: #302b27;
@@ -19,5 +19,23 @@ body {
   font-weight: 400;
   line-height: 1.7;
   color: $color-grey-dark;
-  padding: 30px;
+}
+
+.footer-container {
+  height: 100px;
+  background-color: rgba($color-primary-dark, 0.8);
+  color: $color-white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .footer-text {
+    text-align: center;
+    @media screen and (max-width: 768px) {
+      font-size: 10px;
+      padding: 2px;
+      margin-right: 10 px;
+      margin-left: 10 px;
+    }
+  }
 }
