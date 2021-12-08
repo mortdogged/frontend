@@ -1,5 +1,6 @@
 import "./App.css";
 import mortdog from "./radiant-mortdog.png";
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
@@ -8,6 +9,9 @@ function App() {
         <img src={mortdog} className="App-logo" alt="logo" />
         <p>Work in progress</p>
       </header>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }
